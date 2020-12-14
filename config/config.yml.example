@@ -67,10 +67,10 @@ jobs:
           HOSTING_MODE: false # 默认不启用托管提现，若启用则必须在 WITHDRAW 为 true 下才有效（模式：托管提现，建议放弃薅此羊毛时候打开，将使用剩余的2元和1元提现次数将剩余金币最大程度转化为rmb）  
   bilibili:
     # 使用前请阅读 https://raw.githubusercontent.com/TNanko/Scripts/master/scripts/bilibil.py 前12行使用说明
-    enable: false # true 启用脚本； false 不启用脚本（默认不启用脚本）
+    enable: true # true 启用脚本； false 不启用脚本（默认不启用脚本）
     version: 1.0.5
     skip_check_script_version: false # 默认不跳过版本检测
-    notify: false # true 启用消息推送； false 不启用消息推送（默认不发消息推送）
+    notify: true # true 启用消息推送； false 不启用消息推送（默认不发消息推送）
     notify_mode:  # 如果全都配置了，可以根据自身需求进行消息推送方式的选择，不需要的可以注释掉或者删除。推荐 bark
       - bark
       - telegram_bot
@@ -78,4 +78,4 @@ jobs:
       - server_chan
     parameters:
       ACCOUNTS:
-        - COOKIE: 
+        - COOKIE: buvid3=B16C33EE-BF55-401D-893E-5D5AAFC9A9A377417infoc; rpdid=xopkiwisxdospxskokiw; LIVE_BUVID=AUTO1515477159581481; _uuid=CA0C2F79-E0E4-696B-EFDB-6C6C4F71DA5E51692infoc; CURRENT_QUALITY=64; CURRENT_FNVAL=80; blackside_state=1; sid=km0hcyce; DedeUserID=350221451; DedeUserID__ckMd5=bb416a9913f92b4a; SESSDATA=8ffdb9ef%2C1623509811%2C3789c*c1; bili_jct=abab3822dd069da0dc9ba5b2f35221f4; _dfcaptcha=3e52c5f58b8c4f7abe1ea5436ff677ae 
